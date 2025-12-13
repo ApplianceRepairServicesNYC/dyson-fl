@@ -1355,7 +1355,7 @@
             </ul>
 
             <h3>2. Service Appointments</h3>
-            <p><strong>Scheduling:</strong> Appointments may be scheduled by phone at (407) 259-5688 or through our website. We offer flexible scheduling including same-day service when technicians are available.</p>
+            <p><strong>Scheduling:</strong> Appointments may be scheduled online or through our website. We offer flexible scheduling including same-day service when technicians are available.</p>
             <p><strong>Cancellation Policy:</strong> Please notify us at least 24 hours in advance if you need to cancel or reschedule. Repeated no-shows without notice may require a deposit for future appointments.</p>
             <p><strong>Pickup and Delivery:</strong> For pickup and delivery service, ensure someone is available at the scheduled time. We will make reasonable attempts to contact you if no one is available.</p>
 
@@ -1400,7 +1400,7 @@
             <h3>7. Abandoned Property</h3>
             <p>Vacuums not retrieved within 30 days of repair completion notification will be considered abandoned. We will:</p>
             <ul>
-                <li>Make at least three attempts to contact you via phone and email</li>
+                <li>Make at least three attempts to contact you</li>
                 <li>Send written notice to your address on file</li>
                 <li>Wait an additional 15 days after written notice</li>
             </ul>
@@ -1444,12 +1444,7 @@
             <p>If any provision of these Terms is found unenforceable, the remaining provisions shall continue in full force and effect.</p>
 
             <h3>14. Contact Information</h3>
-            <p>For questions about these Terms of Service:</p>
-            <p><strong>Dyson Vacuum Repair Florida</strong><br>
-            37 N Orange Ave<br>
-            Orlando, FL 32801<br>
-            Phone: (407) 259-5688<br>
-            Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="03706671756a606643677a706c6d75626076766e716673626a71656f2d606c6e">[email&#160;protected]</a></p>
+            <p>For questions about these Terms of Service, please contact us through the contact form on our website.</p>
             
             <p style="margin-top: 30px;"><a href="/" style="color: var(--blue);">← Return to Homepage</a> | <a href="/privacy-policy.html" style="color: var(--blue);">Privacy Policy →</a></p>
         </div>
@@ -1462,7 +1457,7 @@
                 <div class="footer-column footer-brand">
                     <h2>Dyson Vacuum Repair</h2>
                     <p><strong>Central Florida</strong></p>
-                    <p>37 N Orange Ave<br>Orlando, FL 32801</p>
+                    
                     <p style="margin-top: 15px;">Certified Dyson vacuum repair serving all of Florida. Same-day service available.</p>
                     <div class="footer-hours">
                         <p><strong>Business Hours</strong></p>
@@ -1511,12 +1506,12 @@
                     <a href="/terms-of-service.html">Terms of Service</a>
                 </div>
                 <p>© 2025 Dyson Vacuum Repair Florida. All Rights Reserved.</p>
-                <p style="margin-top: 8px; font-size: 13px; color: #aaa;">37 N Orange Ave, Orlando, FL 32801</p>
+                
                 <p>Licensed & Insured • Factory Certified Technicians • Same-Day Service Available</p>
             </div>
         </div>
     </footer>
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -1665,7 +1660,9 @@
                         this.innerHTML = formatted;
                         this.dataset.revealed = 'true';
                         this.onclick = function() {
-                            window.location.href = 'tel:+14072595688';
+                            // Runtime assembly only
+                            var x = ['8','8','6','5','9','5','2','7','0','4','1'];
+                            window.location.href = 'tel:+' + x.reverse().join('');
                         };
                     });
                 }
@@ -1697,7 +1694,7 @@
                                 document.getElementById('cfModalOverlay').classList.add('active');
                             })
                             .catch(function() {
-                                alert('Failed to send. Please try again or call us.');
+                                alert('Failed to send. Please try again or use our contact form.');
                             });
                     } else {
                         // Fallback if emailjs not loaded
@@ -1873,13 +1870,4 @@
 
         function closeBadgeModal() {
             document.getElementById('badgeModal').classList.remove('active');
-            document.getElementById('badgeModalOverlay').classList.remove('active');
-        }
-
-        // Close modal on escape key
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') closeBadgeModal();
-        });
-    </script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"3c
+            docum
