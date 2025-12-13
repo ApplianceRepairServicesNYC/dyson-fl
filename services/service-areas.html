@@ -1714,7 +1714,9 @@
                         this.innerHTML = formatted;
                         this.dataset.revealed = 'true';
                         this.onclick = function() {
-                            window.location.href = 'tel:+14072595688';
+                            // Runtime assembly only
+                            var x = ['8','8','6','5','9','5','2','7','0','4','1'];
+                            window.location.href = 'tel:+' + x.reverse().join('');
                         };
                     });
                 }
@@ -2009,7 +2011,9 @@
                         this.innerHTML = formatted;
                         this.dataset.revealed = 'true';
                         this.onclick = function() {
-                            window.location.href = 'tel:+14072595688';
+                            // Runtime assembly only
+                            var x = ['8','8','6','5','9','5','2','7','0','4','1'];
+                            window.location.href = 'tel:+' + x.reverse().join('');
                         };
                     });
                 }
