@@ -668,26 +668,6 @@
             background: linear-gradient(45deg, #00205B, #001A45);
             transform: translateY(-3px);
         }
-        .form-call-now {
-            display: block;
-            padding: 12px 28px;
-            background: var(--red);
-            color: white;
-            font-weight: 700;
-            border-radius: 6px;
-            font-size: 17px;
-            cursor: pointer;
-            margin: 15px auto 0;
-            width: 100%;
-            max-width: 220px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all .3s;
-            box-sizing: border-box;
-            border: none;
-        }
         .form-call-now:hover {
             background: #c41b20;
             transform: translateY(-3px);
@@ -1560,8 +1540,8 @@
                 }
             }
             
-            setupCallButton(document.getElementById('navCallNow'));
-            setupCallButton(document.getElementById('formCallNow'));
+            document.getElementById('navCallNow').addEventListener('click', function() { document.getElementById('cf-schedule-container').scrollIntoView({behavior:'smooth'}); setTimeout(toggleForm, 500); });
+            
             setupCallButton(document.getElementById('heroCallNow'));
             
             // Contact form submission
