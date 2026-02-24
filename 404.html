@@ -1479,27 +1479,11 @@
                 });
             }
             
-            function setupCallButton(btn) {
-                if (btn) {
-                    btn.addEventListener('click', function() {
-                        if (this.dataset.revealed) return;
-                        const digits = [4, 0, 7, 2, 5, 9, 5, 6, 8, 8];
-                        const num = digits.join('');
-                        const formatted = '+1 (' + num.slice(0,3) + ') ' + num.slice(3,6) + '-' + num.slice(6);
-                        this.innerHTML = formatted;
-                        this.dataset.revealed = 'true';
-                        this.onclick = function() {
-                            // Runtime assembly only
-                            var x = ['8','8','6','5','9','5','2','7','0','4','1'];
-                            window.location.href = 'tel:+' + x.reverse().join('');
-                        };
-                    });
-                }
             }
             
             document.getElementById('navCallNow').addEventListener('click', function() { document.getElementById('cf-schedule-container').scrollIntoView({behavior:'smooth'}); setTimeout(toggleForm, 500); });
             
-            setupCallButton(document.getElementById('heroCallNow'));
+            
             
             // Contact form submission
             const cfContactForm = document.getElementById('cfContactForm');
