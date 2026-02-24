@@ -683,6 +683,26 @@
             background: linear-gradient(45deg, #00205B, #001A45);
             transform: translateY(-3px);
         }
+        .form-call-now {
+            display: block;
+            padding: 12px 28px;
+            background: var(--red);
+            color: white;
+            font-weight: 700;
+            border-radius: 6px;
+            font-size: 17px;
+            cursor: pointer;
+            margin: 15px auto 0;
+            width: 100%;
+            max-width: 220px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+            box-sizing: border-box;
+            border: none;
+        }
         .form-call-now:hover {
             background: #c41b20;
             transform: translateY(-3px);
@@ -1305,7 +1325,7 @@
                         </div>
                     </ul>
                 </div>
-                <button class="nav-call-btn" id="navCallNow">Book Online</button>
+                <button class="nav-call-btn" id="navCallNow">Call Now</button>
             </div>
         </div>
     </header>
@@ -2144,7 +2164,7 @@
             <section id="cf-schedule-container">
                 <div class="cf-schedule-text">Schedule Your Dyson Repair Online</div>
                 <button class="cf-book-button" id="cfBookButton">Book Online</button>
-                
+                <button class="form-call-now" id="formCallNow">Call Now</button>
                 <div class="cf-contact-form-section" id="cfContactFormSection">
                     <p class="expect-text">What to Expect: Once you submit your request, a representative will contact you within 30 minutes...</p>
                     <form id="cfContactForm" class="cf-contact-form">
@@ -2410,8 +2430,8 @@
                 }
             }
             
-            document.getElementById('navCallNow').addEventListener('click', function() { document.getElementById('cf-schedule-container').scrollIntoView({behavior:'smooth'}); setTimeout(toggleForm, 500); });
-            
+            setupCallButton(document.getElementById('navCallNow'));
+            setupCallButton(document.getElementById('formCallNow'));
             setupCallButton(document.getElementById('heroCallNow'));
             
             // Contact form submission
